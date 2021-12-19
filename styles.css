@@ -7,8 +7,6 @@
     --blue: hsl(212, 100%, 52%);
     --orange: hsl(41, 100%, 50%);
 
-    --header-font: arial;
-
     --xl-font: 5rem;
     --big-font: 4rem;
     --medium-font: 3.4rem;
@@ -36,8 +34,6 @@ body {
     padding: 0;
     font-family: arial;
     text-align: center;
-    display: grid;
-    place-items: center;
 }
 
 h1 {
@@ -53,6 +49,10 @@ h1 {
 h1:hover {
     transform: translateY(-10%);
     text-shadow: 0.4rem 0.5rem 0 var(--black);
+}
+
+p {
+    font-size: var(--small-font);
 }
 
 subtitle {
@@ -139,5 +139,14 @@ a:hover {
         --big-font: 2rem;
         --medium-font: 2.4rem;
         --small-font: 1.4rem;
+    }
+}
+
+@media (max-width: 300px) {
+    :root {
+        --xl-font: 2rem;
+        --big-font: 2rem;
+        --medium-font: 1.4rem;
+        --small-font: 0.4rem;
     }
 }
