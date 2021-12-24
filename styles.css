@@ -80,6 +80,9 @@ nav {
     position: sticky;
     top: 0;
     font-family: var(--header-font);
+
+    border-bottom: white 2px solid;
+    border-top: white 2px solid;
 }
 
 nav a {
