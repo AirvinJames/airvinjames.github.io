@@ -20,7 +20,7 @@
 
 html {
     aspect-ratio: 16/9;
-    background-image: url("Images/bg.svg");
+    background-image: url("/Images/bg.svg");
     background-color: #0B0052;
     background-position: top;
     background-size: cover;
@@ -71,7 +71,7 @@ subtitle:hover {
 nav {
     width: 100vw;
     height: 6rem;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px);
     
     display: flex;
@@ -80,6 +80,7 @@ nav {
     position: sticky;
     top: 0;
     font-family: var(--header-font);
+    z-index: 500;
 
     border-bottom: white 2px solid;
     border-top: white 2px solid;
@@ -109,7 +110,6 @@ nav a:hover {
 a {
     color: var(--blue);
     text-decoration: none;
-    text-decoration: none;
     background-image: linear-gradient(var(--blue), var(--blue));
     background-repeat: no-repeat;
     background-position: bottom left;
@@ -123,7 +123,7 @@ a:hover {
 }
 
 #icon {
-    background: url("Images/icon.svg");
+    background: url("/Images/icon.svg");
     width: fit-content;
     height: fit-content;
     padding: 0.5rem;
@@ -139,17 +139,17 @@ a:hover {
 @media (max-width: 800px) {
     :root {
         --xl-font: 3rem;
-        --big-font: 2rem;
-        --medium-font: 2.4rem;
+        --big-font: 2.4rem;
+        --medium-font: 2rem;
         --small-font: 1.4rem;
     }
 }
 
 @media (max-width: 300px) {
     :root {
-        --xl-font: 2rem;
-        --big-font: 2rem;
+        --xl-font: 2.5rem;
+        --big-font: 1.5rem;
         --medium-font: 1.4rem;
-        --small-font: 0.4rem;
+        --small-font: 1rem;
     }
 }

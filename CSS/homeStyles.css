@@ -1,0 +1,49 @@
+body {
+    display: grid;
+    place-items: center;
+}
+
+#home {
+    background-size: 100% 3px;
+    font-size: calc(var(--small-font) + 0.4rem);
+    color: inherit;
+}
+
+#name {
+    margin-top: 10rem;
+    font-size: var(--xl-font);
+}
+
+#github-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 0.1rem;
+    margin: 2rem;
+    border-radius: 100vw;
+    border: black solid 0.4rem;
+    transition: 0.8s ease-in-out;
+}
+
+#github-link:hover {
+    box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.6);
+}
+
+#mark {
+    padding: 0.2rem;
+    padding-right: 0.2rem;
+    width: auto;
+    height: auto;
+    max-width: 42px;
+    max-height: 42px;
+}
+
+#logo {
+    padding: 0.2rem;
+    padding-right: 0.2rem;
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 70.5px
+}

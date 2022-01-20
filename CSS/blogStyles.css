@@ -1,0 +1,15 @@
+p {
+    text-align: left;
+    margin: 6rem
+}
+
+#blog {
+    background-size: 100% 3px;
+    font-size: calc(var(--small-font) + 0.4rem);
+    color: inherit;
+}
+
+#name {
+    margin: var(--xl-font);
+    font-size: var(--xl-font);
+}
