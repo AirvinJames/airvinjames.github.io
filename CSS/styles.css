@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 :root {
-    --black: hsl(0, 0%, 10%);
-    --gray: hsl(0, 0%, 25%);
     --dark-blue: hsl(241, 100%, 12%);
-    --blue: hsl(212, 100%, 52%);
-    --orange: hsl(41, 100%, 50%);
-
+    --navbar-gap: 3rem;
     --xl-font: 5rem;
     --big-font: 4rem;
     --medium-font: 3.4rem;
@@ -37,7 +33,7 @@ body {
 }
 
 h1 {
-    font-size: var(--small-font);
+    font-size: var(--big-font);
     width: fit-content;
     position: relative;
     transition: 1s;
@@ -77,6 +73,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: var(--navbar-gap);
     position: sticky;
     top: 0;
     font-family: var(--header-font);
@@ -90,15 +87,13 @@ nav a {
     color: white;
     background: transparent;
     font-size: var(--small-font);
-    margin-left: var(--small-font);
-    margin-right: var(--small-font);
     color: white;
     text-decoration: none;
     background-image: linear-gradient(white, white);
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 0% 3px;
-    transition: background-size 500ms ease-in-out, font-size 1.2s;
+    transition: background-size 300ms ease-in, font-size 500ms;
 }
 
 nav a:hover {
@@ -139,17 +134,20 @@ a:hover {
 @media (max-width: 800px) {
     :root {
         --xl-font: 3rem;
+        --navbar-gap: 2rem;
         --big-font: 2.4rem;
         --medium-font: 2rem;
         --small-font: 1.4rem;
+
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
     :root {
-        --xl-font: 2.5rem;
-        --big-font: 1.5rem;
-        --medium-font: 1.4rem;
-        --small-font: 1rem;
+        --xl-font: 2.2rem;
+        --navbar-gap: 0.7rem;
+        --big-font: 1.2rem;
+        --medium-font: 1.1rem;
+        --small-font: 0.7rem;
     }
 }

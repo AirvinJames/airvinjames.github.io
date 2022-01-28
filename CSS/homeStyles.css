@@ -23,7 +23,7 @@ body {
     margin: 2rem;
     border-radius: 100vw;
     border: black solid 0.4rem;
-    transition: 0.8s ease-in-out;
+    transition: 400ms ease-in-out;
 }
 
 #github-link:hover {
