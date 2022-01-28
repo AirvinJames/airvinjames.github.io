@@ -39,12 +39,12 @@ h1 {
     transition: 1s;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    text-shadow: 0 0 0 var(--black);
+    text-shadow: 0 0 0 black;
 }
 
 h1:hover {
     transform: translateY(-10%);
-    text-shadow: 0.4rem 0.5rem 0 var(--black);
+    text-shadow: 0.4rem 0.5rem 0 black;
 }
 
 p {
@@ -55,13 +55,13 @@ subtitle {
     font-size: var(--small-font);
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    text-shadow: 0 0 0 var(--black);
+    text-shadow: 0 0 0 black;
     transition: 1s;
 }
 
 subtitle:hover {
     transform: translateY(-10%);
-    text-shadow: 0.1rem 0.2rem 0 var(--black);
+    text-shadow: 0.1rem 0.2rem 0 black;
 }
 
 nav {
