@@ -1,154 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 :root {
-    --dark-blue: hsl(241, 100%, 12%);
-    --navbar-gap: 3rem;
     --xl-font: 5rem;
+    --navbar-gap: 3rem;
     --big-font: 4rem;
-    --medium-font: 3.4rem;
+    --medium-font: 3rem;
     --small-font: 2rem;
 }
 
-* {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
+* { color: white; font-family: Montserrat; }
 
-html {
-    aspect-ratio: 16/9;
-    background-image: url("/Images/bg.svg");
-    background-color: #0B0052;
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-body {
-    margin: 0;
-    padding: 0;
-    font-family: arial;
-    text-align: center;
-}
+html { background: #102A43; }
+body { margin: 0; padding: 0; }
+main { text-align: center; }
+section { display: inline-block; width: 70vw; padding: 1.5rem; }
 
-h1 {
-    font-size: var(--big-font);
-    width: fit-content;
-    height: fit-content;
-    position: relative;
-    transition: 1s;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    text-shadow: 0 0 0 black;
-}
 
-h1:hover {
-    transform: translateY(-10%);
-    text-shadow: 0.4rem 0.5rem 0 black;
-}
+h1 { font-size: var(--big-font); }
+h2 { font-size: var(--medium-font);}
+p { font-size: var(--small-font); }
 
-p {
-    font-size: var(--small-font);
-}
-
-subtitle {
-    font-size: var(--small-font);
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    text-shadow: 0 0 0 black;
-    transition: 1s;
-}
-
-subtitle:hover {
-    transform: translateY(-10%);
-    text-shadow: 0.1rem 0.2rem 0 black;
-}
-
-nav {
-    width: 100vw;
-    height: 6rem;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(2px);
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--navbar-gap);
-    position: sticky;
-    top: 0;
-    font-family: var(--header-font);
-    z-index: 500;
-
-    border-bottom: white 2px solid;
-    border-top: white 2px solid;
-}
-
-nav a {
-    color: white;
-    background: transparent;
-    font-size: var(--small-font);
-    color: white;
-    text-decoration: none;
-    background-image: linear-gradient(white, white);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 0% 3px;
-    transition: background-size 300ms ease-in, font-size 500ms;
-}
-
-nav a:hover {
-    font-size: calc(var(--small-font) + 0.4rem);
-    background-size: 100% 3px;
-    color: inherit;
-}
 
 a {
-    color: var(--blue);
+    color: white;
+    background: transparent;
     text-decoration: none;
-    background-image: linear-gradient(var(--blue), var(--blue));
+    background-image: linear-gradient(90deg, #5ba0e1, rgb(27, 89, 146));
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 0% 3px;
-    transition: background-size 500ms ease-in-out;
+    transition: background-size 200ms ease-out, color 200ms ease-out;
+}
+a:hover { background-size: 100% 3px; color: #5ba0e1; }
+
+nav {
+    background: #243B53;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
 }
 
-a:hover {
-    background-size: 100% 3px;
-    color: inherit;
-}
+#links { display: flex; justify-content: center; gap: var(--xl-font); list-style: none;}
 
-#icon {
-    background: url("/Images/icon.svg");
-    width: fit-content;
-    height: fit-content;
-    padding: 0.5rem;
-    margin: 1rem;
-    border-radius: 100vh;
-    font-size: var(--medium-font);
-}
+#links li { font-size: var(--medium-font); width: fit-content; height: fit-content;}
+p a { font-size: var(--small-font); }
 
-#icon:hover {
-    transform: translateY(-8%);
-}
+.center { text-align: center; }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
     :root {
-        --xl-font: 3rem;
+        --xl-font: 3.5rem;
         --navbar-gap: 2rem;
-        --big-font: 2.4rem;
-        --medium-font: 2rem;
-        --small-font: 1.4rem;
+        --big-font: 2.5rem;
+        --medium-font: 1.5rem;
+        --small-font: 1rem;
 
     }
 }
 
 @media (max-width: 400px) {
     :root {
-        --xl-font: 2.4rem;
+        --xl-font: 2.5rem;
         --navbar-gap: 0.9rem;
-        --big-font: 1.4rem;
+        --big-font: 1.5rem;
         --medium-font: 1.3rem;
-        --small-font: 0.9rem;
+        --small-font: 1rem;
     }
 }
